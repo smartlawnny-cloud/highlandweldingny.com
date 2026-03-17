@@ -280,21 +280,21 @@
     .hero-bg::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 5px; background: repeating-linear-gradient(90deg, var(--rust) 0, var(--rust) 72px, var(--ironlight) 72px, var(--ironlight) 75px); }
     .hero-content { position: relative; z-index: 10; padding: 100px 5rem 80px; max-width: 700px; }
     .est-rule { display: flex; align-items: center; gap: 0.9rem; margin-bottom: 1.6rem; animation: fadeUp 0.7s 0.1s ease both; }
-    .est-rule::before, .est-rule::after { content: ''; flex: 0 0 44px; height: 1px; background: var(--rust); }
+    .est-rule::before, .est-rule::after { content: ''; flex: 0 0 44px; height: 1px; background: rgba(255,255,255,0.4); }
     .est-rule span { font-family: 'Oswald', sans-serif; font-size: 0.68rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--rust); white-space: nowrap; }
-    .hero-title { font-family: 'Playfair Display', serif; font-size: clamp(2.8rem, 5.5vw, 4.8rem); font-weight: 900; line-height: 1.05; color: var(--cream); margin-bottom: 0.4rem; animation: fadeUp 0.7s 0.2s ease both; }
-    .hero-title em { font-style: italic; color: var(--gold); }
-    .hero-sub { font-family: 'Oswald', sans-serif; font-size: 0.9rem; letter-spacing: 0.24em; text-transform: uppercase; color: var(--ash); font-weight: 300; margin-bottom: 1.8rem; animation: fadeUp 0.7s 0.3s ease both; }
-    .hero-desc { font-size: 1rem; color: var(--ash); max-width: 500px; margin-bottom: 2rem; line-height: 1.85; animation: fadeUp 0.7s 0.4s ease both; }
+    .hero-title { font-family: 'Playfair Display', serif; font-size: clamp(2.8rem, 5.5vw, 4.8rem); font-weight: 900; line-height: 1.05; color: #fff; margin-bottom: 0.4rem; animation: fadeUp 0.7s 0.2s ease both; }
+    .hero-title em { font-style: italic; color: #ccc; }
+    .hero-sub { font-family: 'Oswald', sans-serif; font-size: 0.9rem; letter-spacing: 0.24em; text-transform: uppercase; color: #bbb; font-weight: 300; margin-bottom: 1.8rem; animation: fadeUp 0.7s 0.3s ease both; }
+    .hero-desc { font-size: 1rem; color: #ccc; max-width: 500px; margin-bottom: 2rem; line-height: 1.85; animation: fadeUp 0.7s 0.4s ease both; }
     .hero-stars { display: flex; align-items: center; gap: 0.7rem; margin-bottom: 2.2rem; animation: fadeUp 0.7s 0.5s ease both; }
     .stars { color: var(--gold); font-size: 1.1rem; letter-spacing: 0.05em; }
-    .hero-stars span { font-family: 'Oswald', sans-serif; font-size: 0.78rem; letter-spacing: 0.14em; color: var(--ash); text-transform: uppercase; }
+    .hero-stars span { font-family: 'Oswald', sans-serif; font-size: 0.78rem; letter-spacing: 0.14em; color: #bbb; text-transform: uppercase; }
     .btn-group { display: flex; gap: 1rem; flex-wrap: wrap; animation: fadeUp 0.7s 0.6s ease both; }
     @keyframes fadeUp { from { opacity:0; transform:translateY(28px); } to { opacity:1; transform:translateY(0); } }
     .btn-primary { display: inline-block; background: #1a1a1a; color: #fff; font-family: 'Oswald', sans-serif; font-size: 0.8rem; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 600; padding: 0.9rem 2.2rem; text-decoration: none; transition: background 0.2s, transform 0.15s; border: none; cursor: pointer; }
     .btn-primary:hover { background: var(--ember); transform: translateY(-2px); }
-    .btn-ghost { display: inline-block; background: transparent; color: var(--parchment); font-family: 'Oswald', sans-serif; font-size: 0.8rem; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 300; padding: 0.9rem 2.2rem; text-decoration: none; border: 1px solid rgba(196,180,154,0.4); transition: border-color 0.2s, color 0.2s; cursor: pointer; }
-    .btn-ghost:hover { border-color: var(--gold); color: var(--gold); }
+    .btn-ghost { display: inline-block; background: transparent; color: #fff; font-family: 'Oswald', sans-serif; font-size: 0.8rem; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 300; padding: 0.9rem 2.2rem; text-decoration: none; border: 1px solid rgba(255,255,255,0.4); transition: border-color 0.2s, color 0.2s; cursor: pointer; }
+    .btn-ghost:hover { border-color: #fff; color: #fff; }
 
     /* ─── TRUST BAR ────────────────────────────── */
     .trust-bar { background: #1a1a1a; display: flex; justify-content: center; align-items: center; flex-wrap: wrap; }
@@ -325,7 +325,7 @@
     .img-frame img { width: 100%; height: 440px; object-fit: cover; position: relative; z-index: 1; filter: sepia(25%) contrast(1.08) brightness(0.88); display: block; }
     .about-text p { color: var(--ash); margin-bottom: 1.1rem; font-size: 0.96rem; }
     .about-text p strong { color: var(--cream); }
-    .stat-row { display: flex; gap: 2.5rem; margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid rgba(168,56,32,0.3); flex-wrap: wrap; }
+    .stat-row { display: flex; gap: 2.5rem; margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid rgba(0,0,0,0.1); flex-wrap: wrap; }
     .stat-num { font-family: 'Playfair Display', serif; font-size: 2.8rem; font-weight: 900; color: var(--gold); line-height: 1; }
     .stat-lbl { font-family: 'Oswald', sans-serif; font-size: 0.68rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ash); margin-top: 0.3rem; }
 
@@ -358,7 +358,7 @@
 
     /* ─── GALLERY ──────────────────────────────── */
     #gallery { background: var(--soot); }
-    .gallery-swap-note { background: rgba(168,56,32,0.15); border-left: 3px solid var(--rust); padding: 0.75rem 1.1rem; font-size: 0.82rem; color: var(--ash); font-style: italic; margin-bottom: 2.5rem; }
+    .gallery-swap-note { background: rgba(0,0,0,0.05); border-left: 3px solid var(--rust); padding: 0.75rem 1.1rem; font-size: 0.82rem; color: var(--ash); font-style: italic; margin-bottom: 2.5rem; }
     .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: 260px 260px; gap: 6px; }
     .g-tall { grid-row: span 2; }
     .g-item { overflow: hidden; position: relative; background: var(--ironlight); }
@@ -381,14 +381,14 @@
     .carousel-wrap { position: relative; overflow: hidden; }
     .carousel-track { display: flex; gap: 2px; transition: transform 0.5s ease; }
     .review-card { background: var(--ironlight); padding: 2rem 1.8rem; min-width: calc(50% - 1px); flex-shrink: 0; }
-    .review-card.featured { min-width: 100%; background: var(--ironlight); border-left: 4px solid var(--gold); }
+    .review-card.featured { min-width: 100%; background: var(--ironlight); border-left: 4px solid #1a1a1a; }
     .reviewer-name { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; color: var(--cream); margin-bottom: 0.2rem; }
     .reviewer-meta { font-family: 'Oswald', sans-serif; font-size: 0.68rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--rust); margin-bottom: 0.8rem; }
     .review-stars { color: var(--gold); font-size: 0.95rem; margin-bottom: 0.8rem; }
     .review-text { font-size: 0.92rem; color: var(--ash); line-height: 1.8; font-style: italic; }
     .carousel-controls { display: flex; align-items: center; gap: 1rem; margin-top: 1.5rem; }
     .carousel-btn { background: var(--ironlight); border: 1px solid var(--rust); color: var(--ash); width: 40px; height: 40px; cursor: pointer; font-size: 1rem; display: flex; align-items: center; justify-content: center; transition: background 0.2s, color 0.2s; }
-    .carousel-btn:hover { background: var(--rust); color: var(--cream); }
+    .carousel-btn:hover { background: #1a1a1a; color: #fff; }
     .carousel-dots { display: flex; gap: 0.5rem; }
     .cdot { width: 8px; height: 8px; background: var(--ironlight); border: 1px solid var(--rust); cursor: pointer; transition: background 0.2s; }
     .cdot.active { background: var(--gold); border-color: var(--gold); }
@@ -407,7 +407,7 @@
     /* ─── FAQ ──────────────────────────────────── */
     #faq { background: var(--iron); }
     .faq-list { margin-top: 2.5rem; }
-    .faq-item { border-bottom: 1px solid rgba(168,56,32,0.3); }
+    .faq-item { border-bottom: 1px solid rgba(0,0,0,0.1); }
     .faq-q {
       width: 100%; background: none; border: none; cursor: pointer;
       display: flex; align-items: center; justify-content: space-between;
@@ -441,7 +441,7 @@
     .form-group { margin-bottom: 1rem; }
     .form-group label { display: block; font-family: 'Oswald', sans-serif; font-size: 0.66rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--rust); margin-bottom: 0.3rem; }
     .form-group input, .form-group textarea, .form-group select {
-      width: 100%; background: var(--ironlight); border: 1px solid rgba(168,56,32,0.4);
+      width: 100%; background: var(--ironlight); border: 1px solid rgba(0,0,0,0.15);
       color: var(--cream); font-family: 'Libre Baskerville', serif; font-size: 0.9rem;
       padding: 0.75rem 1rem; outline: none;
       transition: border-color 0.2s;
@@ -473,7 +473,7 @@
     .footer-contact-item a:hover { color: #fff; }
     .footer-contact-item a { color: var(--ash); text-decoration: none; transition: color 0.2s; }
     .footer-contact-item a:hover { color: var(--gold); }
-    .footer-bottom { max-width: 1100px; margin: 2rem auto 0; padding-top: 1.5rem; border-top: 1px solid rgba(168,56,32,0.3); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+    .footer-bottom { max-width: 1100px; margin: 2rem auto 0; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.15); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
     .footer-copy { font-family: 'Oswald', sans-serif; font-size: 0.68rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ash); }
 
     /* ─── RESPONSIVE ───────────────────────────── */
@@ -937,7 +937,7 @@
         <a class="contact-directions" href="https://www.google.com/maps/dir/?api=1&destination=684+Highland+Ave+Peekskill+NY+10566" target="_blank" rel="noopener">
           ↗ Get Directions
         </a>
-        <div style="margin-top:2rem; padding-top:2rem; border-top:1px solid rgba(168,56,32,0.3);">
+        <div style="margin-top:2rem; padding-top:2rem; border-top:1px solid rgba(0,0,0,0.1);">
           <div class="contact-lbl">Service Area</div>
           <div class="contact-val" style="font-size:0.9rem;color:var(--ash);margin-top:0.3rem;">Westchester · Putnam · Rockland · Dutchess · Hudson Valley · NYC · Long Island</div>
         </div>
