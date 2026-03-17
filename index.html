@@ -270,31 +270,28 @@
     .reveal-delay-5 { transition-delay: 0.5s; }
 
     /* ─── HERO ─────────────────────────────────── */
-    #hero { min-height: 100vh; position: relative; display: flex; align-items: center; overflow: hidden; }
-    .hero-bg {
-      position: absolute; inset: 0;
-      background:
-        linear-gradient(105deg, rgba(14,10,7,0.97) 42%, rgba(14,10,7,0.55) 100%),
-        url('https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=1800&q=85') center/cover no-repeat;
-    }
-    .hero-bg::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 5px; background: repeating-linear-gradient(90deg, var(--rust) 0, var(--rust) 72px, var(--ironlight) 72px, var(--ironlight) 75px); }
-    .hero-content { position: relative; z-index: 10; padding: 100px 5rem 80px; max-width: 700px; }
+    #hero { min-height: auto; position: relative; display: flex; align-items: center; overflow: hidden; background: #fff; }
+    .hero-bg { display: none; }
+    .hero-content { position: relative; z-index: 10; padding: 80px 5rem 60px; max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; width: 100%; }
+    .hero-text { }
     .est-rule { display: flex; align-items: center; gap: 0.9rem; margin-bottom: 1.6rem; animation: fadeUp 0.7s 0.1s ease both; }
-    .est-rule::before, .est-rule::after { content: ''; flex: 0 0 44px; height: 1px; background: rgba(255,255,255,0.4); }
-    .est-rule span { font-family: 'Oswald', sans-serif; font-size: 0.68rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--rust); white-space: nowrap; }
-    .hero-title { font-family: 'Playfair Display', serif; font-size: clamp(2.8rem, 5.5vw, 4.8rem); font-weight: 900; line-height: 1.05; color: #fff; margin-bottom: 0.4rem; animation: fadeUp 0.7s 0.2s ease both; }
-    .hero-title em { font-style: italic; color: #ccc; }
-    .hero-sub { font-family: 'Oswald', sans-serif; font-size: 0.9rem; letter-spacing: 0.24em; text-transform: uppercase; color: #bbb; font-weight: 300; margin-bottom: 1.8rem; animation: fadeUp 0.7s 0.3s ease both; }
-    .hero-desc { font-size: 1rem; color: #ccc; max-width: 500px; margin-bottom: 2rem; line-height: 1.85; animation: fadeUp 0.7s 0.4s ease both; }
+    .est-rule::before, .est-rule::after { content: ''; flex: 0 0 44px; height: 1px; background: #1a1a1a; }
+    .est-rule span { font-family: 'Oswald', sans-serif; font-size: 0.68rem; letter-spacing: 0.3em; text-transform: uppercase; color: #1a1a1a; white-space: nowrap; }
+    .hero-title { font-family: 'Playfair Display', serif; font-size: clamp(2.4rem, 4.5vw, 3.8rem); font-weight: 900; line-height: 1.05; color: #1a1a1a; margin-bottom: 0.4rem; animation: fadeUp 0.7s 0.2s ease both; }
+    .hero-title em { font-style: italic; color: #444; }
+    .hero-sub { font-family: 'Oswald', sans-serif; font-size: 0.9rem; letter-spacing: 0.24em; text-transform: uppercase; color: #666; font-weight: 300; margin-bottom: 1.8rem; animation: fadeUp 0.7s 0.3s ease both; }
+    .hero-desc { font-size: 1rem; color: #555; max-width: 500px; margin-bottom: 2rem; line-height: 1.85; animation: fadeUp 0.7s 0.4s ease both; }
     .hero-stars { display: flex; align-items: center; gap: 0.7rem; margin-bottom: 2.2rem; animation: fadeUp 0.7s 0.5s ease both; }
-    .stars { color: var(--gold); font-size: 1.1rem; letter-spacing: 0.05em; }
-    .hero-stars span { font-family: 'Oswald', sans-serif; font-size: 0.78rem; letter-spacing: 0.14em; color: #bbb; text-transform: uppercase; }
+    .stars { color: #1a1a1a; font-size: 1.1rem; letter-spacing: 0.05em; }
+    .hero-stars span { font-family: 'Oswald', sans-serif; font-size: 0.78rem; letter-spacing: 0.14em; color: #666; text-transform: uppercase; }
+    .hero-photo { animation: fadeUp 0.7s 0.3s ease both; }
+    .hero-photo img { width: 100%; height: auto; display: block; border: 1px solid #e0e0e0; }
     .btn-group { display: flex; gap: 1rem; flex-wrap: wrap; animation: fadeUp 0.7s 0.6s ease both; }
     @keyframes fadeUp { from { opacity:0; transform:translateY(28px); } to { opacity:1; transform:translateY(0); } }
     .btn-primary { display: inline-block; background: #1a1a1a; color: #fff; font-family: 'Oswald', sans-serif; font-size: 0.8rem; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 600; padding: 0.9rem 2.2rem; text-decoration: none; transition: background 0.2s, transform 0.15s; border: none; cursor: pointer; }
     .btn-primary:hover { background: var(--ember); transform: translateY(-2px); }
-    .btn-ghost { display: inline-block; background: transparent; color: #fff; font-family: 'Oswald', sans-serif; font-size: 0.8rem; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 300; padding: 0.9rem 2.2rem; text-decoration: none; border: 1px solid rgba(255,255,255,0.4); transition: border-color 0.2s, color 0.2s; cursor: pointer; }
-    .btn-ghost:hover { border-color: #fff; color: #fff; }
+    .btn-ghost { display: inline-block; background: transparent; color: #1a1a1a; font-family: 'Oswald', sans-serif; font-size: 0.8rem; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 300; padding: 0.9rem 2.2rem; text-decoration: none; border: 1px solid rgba(0,0,0,0.3); transition: border-color 0.2s, color 0.2s, background 0.2s; cursor: pointer; }
+    .btn-ghost:hover { border-color: #1a1a1a; background: #1a1a1a; color: #fff; }
 
     /* ─── TRUST BAR ────────────────────────────── */
     .trust-bar { background: #1a1a1a; display: flex; justify-content: center; align-items: center; flex-wrap: wrap; }
@@ -481,7 +478,7 @@
       nav { padding: 0 1.5rem; }
       .nav-links { display: none; }
       .hamburger { display: flex; }
-      .hero-content { padding: 100px 2rem 60px; }
+      .hero-content { padding: 60px 2rem 40px; grid-template-columns: 1fr; gap: 2rem; }
       .section-inner { padding: 4rem 1.5rem; }
       .about-grid, .contact-grid, .area-grid { grid-template-columns: 1fr; gap: 2.5rem; }
       .services-grid, .spotlight-grid { grid-template-columns: 1fr 1fr; }
@@ -551,19 +548,23 @@
 
 <!-- HERO -->
 <section id="hero">
-  <div class="hero-bg"></div>
   <div class="hero-content">
-    <div class="est-rule"><span>Established 1946</span></div>
-    <h1 class="hero-title">Built on <em>Iron.</em><br>Trusted for Generations.</h1>
-    <p class="hero-sub">Structural Steel &amp; Metal Fabrication — Peekskill, NY</p>
-    <p class="hero-desc">For nearly 80 years, Highland Welding Service has been Westchester's go-to shop for structural steel fabrication, custom metalwork, crane services, and welding repair — commercial and residential.</p>
-    <div class="hero-stars">
-      <span class="stars">★★★★★</span>
-      <span>5.0 Google Rating · 16 Reviews</span>
+    <div class="hero-text">
+      <div class="est-rule"><span>Established 1946</span></div>
+      <h1 class="hero-title">Built on <em>Iron.</em><br>Trusted for Generations.</h1>
+      <p class="hero-sub">Structural Steel &amp; Metal Fabrication — Peekskill, NY</p>
+      <p class="hero-desc">For nearly 80 years, Highland Welding Service has been Westchester's go-to shop for structural steel fabrication, custom metalwork, crane services, and welding repair — commercial and residential.</p>
+      <div class="hero-stars">
+        <span class="stars">★★★★★</span>
+        <span>5.0 Google Rating · 16 Reviews</span>
+      </div>
+      <div class="btn-group">
+        <a class="btn-primary" href="tel:9147372091">Call Us Today</a>
+        <a class="btn-ghost" href="services/index.html">Our Services</a>
+      </div>
     </div>
-    <div class="btn-group">
-      <a class="btn-primary" href="tel:9147372091">Call Us Today</a>
-      <a class="btn-ghost" href="services/index.html">Our Services</a>
+    <div class="hero-photo">
+      <img src="images/shop-exterior.jpg" alt="Highland Welding Service — 684 Highland Avenue, Peekskill NY since 1946"/>
     </div>
   </div>
 </section>
