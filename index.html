@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Highland Welding Service, Inc. | Peekskill, NY | Steel Fabrication Est. 1946</title>
+
+  <!-- SEO META -->
+  <meta name="description" content="Highland Welding Service, Inc. — Peekskill NY's trusted steel fabrication and welding shop since 1946. Structural steel, custom metal fabrication, crane services, residential and commercial. Call (914) 737-2091."/>
+  <meta name="keywords" content="welding Peekskill NY, steel fabrication Westchester, metal fabrication Hudson Valley, structural steel, crane services, custom metalwork, welding repair Peekskill"/>
+  <meta name="author" content="Highland Welding Service, Inc."/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://www.highlandwelding.com/"/>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Highland Welding Service, Inc. | Est. 1946 | Peekskill, NY"/>
+  <meta property="og:description" content="Westchester's trusted steel fabrication and welding shop since 1946. 5.0 stars on Google. Call (914) 737-2091."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:locale" content="en_US"/>
+
+  <!-- Schema.org LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Highland Welding Service, Inc.",
+    "image": "",
+    "telephone": "+19147372091",
+    "email": "highlandwelding@aol.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "684 Highland Avenue",
+      "addressLocality": "Peekskill",
+      "addressRegion": "NY",
+      "postalCode": "10566",
+      "addressCountry": "US"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 41.300666, "longitude": -73.920990 },
+    "openingHours": ["Mo-Fr 07:00-15:30"],
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "16" },
+    "foundingDate": "1946",
+    "areaServed": ["Westchester County", "Putnam County", "Hudson Valley", "New York City", "Long Island"]
+  }
+  </script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oswald:wght@300;400;600&display=swap" rel="stylesheet"/>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --brick:     #7a3b2e;
+      --rust:      #a83820;
+      --ember:     #d4620f;
+      --gold:      #c9952a;
+      --ash:       #c4b49a;
+      --soot:      #14100c;
+      --iron:      #1e1a16;
+      --ironlight: #2a2520;
+      --parchment: #f0e6d0;
+      --cream:     #faf4e8;
+      --emergency: #c8260a;
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--soot);
+      color: var(--parchment);
+      font-family: 'Libre Baskerville', Georgia, serif;
+      font-size: 16px; line-height: 1.75;
+      overflow-x: hidden;
+    }
+    body::after {
+      content: ''; position: fixed; inset: 0;
+      pointer-events: none; z-index: 9999; opacity: 0.03;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E");
+    }
+
+    /* ─── EMERGENCY BANNER ─────────────────────── */
+    .emergency-bar {
+      background: var(--emergency);
+      text-align: center;
+      padding: 0.55rem 1rem;
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.78rem; letter-spacing: 0.18em;
+      text-transform: uppercase; color: #fff;
+      position: relative; z-index: 600;
+    }
+    .emergency-bar a { color: #fff; text-decoration: underline; font-weight: 600; }
+
+    /* ─── NAVIGATION ───────────────────────────── */
+    nav {
+      position: sticky; top: 0; left: 0; right: 0; z-index: 500;
+      background: rgba(14,10,7,0.98);
+      border-bottom: 2px solid var(--rust);
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 3rem; height: 66px;
+      transition: box-shadow 0.3s;
+    }
+    nav.scrolled { box-shadow: 0 4px 24px rgba(0,0,0,0.5); }
+    .nav-brand { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; color: var(--gold); text-decoration: none; letter-spacing: 0.03em; }
+    .nav-brand small { display: block; font-family: 'Oswald', sans-serif; font-size: 0.58rem; letter-spacing: 0.22em; color: var(--ash); font-weight: 300; text-transform: uppercase; }
+    .nav-links { display: flex; gap: 2.2rem; list-style: none; }
+    .nav-links a { font-family: 'Oswald', sans-serif; font-size: 0.78rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ash); text-decoration: none; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--gold); }
+    .nav-right { display: flex; align-items: center; gap: 1rem; }
+    .nav-cta { font-family: 'Oswald', sans-serif; font-size: 0.8rem; letter-spacing: 0.1em; color: var(--cream); text-decoration: none; background: var(--rust); padding: 0.5rem 1.4rem; transition: background 0.2s; white-space: nowrap; }
+    .nav-cta:hover { background: var(--ember); }
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; }
+    .hamburger span { display: block; width: 24px; height: 2px; background: var(--ash); transition: all 0.3s; }
+    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+    .mobile-menu {
+      display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(14,10,7,0.99); z-index: 490;
+      flex-direction: column; align-items: center; justify-content: center; gap: 2.5rem;
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a { font-family: 'Playfair Display', serif; font-size: 1.8rem; font-weight: 700; color: var(--cream); text-decoration: none; transition: color 0.2s; }
+    .mobile-menu a:hover { color: var(--gold); }
+    .mobile-menu .m-phone { font-family: 'Oswald', sans-serif; font-size: 1.2rem; letter-spacing: 0.1em; color: var(--gold); margin-top: 1rem; }
+
+    /* ─── FLOATING CTA ─────────────────────────── */
+    .float-cta {
+      position: fixed; bottom: 2rem; right: 2rem; z-index: 480;
+      background: var(--rust); color: var(--cream);
+      font-family: 'Oswald', sans-serif; font-size: 0.85rem; letter-spacing: 0.12em;
+      text-transform: uppercase; font-weight: 600;
+      padding: 0.9rem 1.6rem; text-decoration: none;
+      border-radius: 2px;
+      box-shadow: 0 6px 24px rgba(168,56,32,0.5);
+      display: flex; align-items: center; gap: 0.6rem;
+      transition: background 0.2s, transform 0.2s, opacity 0.3s;
+      opacity: 0; pointer-events: none;
+    }
+    .float-cta.visible { opacity: 1; pointer-events: all; }
+    .float-cta:hover { background: var(--ember); transform: translateY(-2px); }
+    .float-cta svg { width: 18px; height: 18px; fill: currentColor; }
+
+    /* ─── SCROLL ANIMATIONS ────────────────────── */
+    .reveal {
+      opacity: 0; transform: translateY(32px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-left { opacity: 0; transform: translateX(-32px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal-left.visible { opacity: 1; transform: translateX(0); }
+    .reveal-right { opacity: 0; transform: translateX(32px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal-right.visible { opacity: 1; transform: translateX(0); }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+    .reveal-delay-4 { transition-delay: 0.4s; }
+    .reveal-delay-5 { transition-delay: 0.5s; }
+
+    /* ─── HERO ─────────────────────────────────── */
+    #hero { min-height: 100vh; position: relative; display: flex; align-items: center; overflow: hidden; }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background:
+        linear-gradient(105deg, rgba(14,10,7,0.97) 42%, rgba(14,10,7,0.55) 100%),
+        url('https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=1800&q=85') center/cover no-repeat;
+    }
+    .hero-bg::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 5px; background: repeating-linear-gradient(90deg, var(--rust) 0, var(--rust) 72px, var(--ironlight) 72px, var(--ironlight) 75px); }
+    .hero-content { position: relative; z-index: 10; padding: 100px 5rem 80px; max-width: 700px; }
+    .est-rule { display: flex; align-items: center; gap: 0.9rem; margin-bottom: 1.6rem; animation: fadeUp 0.7s 0.1s ease both; }
+    .est-rule::before, .est-rule::after { content: ''; flex: 0 0 44px; height: 1px; background: var(--rust); }
+    .est-rule span { font-family: 'Oswald', sans-serif; font-size: 0.68rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--rust); white-space: nowrap; }
+    .hero-title { font-family: 'Playfair Display', serif; font-size: clamp(2.8rem, 5.5vw, 4.8rem); font-weight: 900; line-height: 1.05; color: var(--cream); margin-bottom: 0.4rem; animation: fadeUp 0.7s 0.2s ease both; }
+    .hero-title em { font-style: italic; color: var(--gold); }
+    .hero-sub { font-family: 'Oswald', sans-serif; font-size: 0.9rem; letter-spacing: 0.24em; text-transform: uppercase; color: var(--ash); font-weight: 300; margin-bottom: 1.8rem; animation: fadeUp 0.7s 0.3s ease both; }
+    .hero-desc { font-size: 1rem; color: var(--ash); max-width: 500px; margin-bottom: 2rem; line-height: 1.85; animation: fadeUp 0.7s 0.4s ease both; }
+    .hero-stars { display: flex; align-items: center; gap: 0.7rem; margin-bottom: 2.2rem; animation: fadeUp 0.7s 0.5s ease both; }
+    .stars { color: var(--gold); font-size: 1.1rem; letter-spacing: 0.05em; }
+    .hero-stars span { font-family: 'Oswald', sans-serif; font-size: 0.78rem; letter-spacing: 0.14em; color: var(--ash); text-transform: uppercase; }
+    .btn-group { display: flex; gap: 1rem; flex-wrap: wrap; animation: fadeUp 0.7s 0.6s ease both; }
+    @keyframes fadeUp { from { opacity:0; transform:translateY(28px); } to { opacity:1; transform:translateY(0); } }
+    .btn-primary { display: inline-block; background: var(--rust); color: var(--cream); font-family: 'Oswald', sans-serif; font-size: 0.8rem; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 600; padding: 0.9rem 2.2rem; text-decoration: none; transition: background 0.2s, transform 0.15s; border: none; cursor: pointer; }
+    .btn-primary:hover { background: var(--ember); transform: translateY(-2px); }
+    .btn-ghost { display: inline-block; background: transparent; color: var(--parchment); font-family: 'Oswald', sans-serif; font-size: 0.8rem; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 300; padding: 0.9rem 2.2rem; text-decoration: none; border: 1px solid rgba(196,180,154,0.4); transition: border-color 0.2s, color 0.2s; cursor: pointer; }
+    .btn-ghost:hover { border-color: var(--gold); color: var(--gold); }
+
+    /* ─── TRUST BAR ────────────────────────────── */
+    .trust-bar { background: var(--rust); display: flex; justify-content: center; align-items: center; flex-wrap: wrap; }
+    .trust-item { font-family: 'Oswald', sans-serif; font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--cream); padding: 1rem 2.2rem; border-right: 1px solid rgba(255,255,255,0.2); display: flex; align-items: center; gap: 0.5rem; }
+    .trust-item:last-child { border-right: none; }
+
+    /* ─── SECTION SHELL ────────────────────────── */
+    .section-inner { max-width: 1100px; margin: 0 auto; padding: 6rem 3rem; }
+    .section-eyebrow { font-family: 'Oswald', sans-serif; font-size: 0.68rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--rust); display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.7rem; }
+    .section-eyebrow::after { content: ''; display: block; width: 44px; height: 1px; background: var(--rust); }
+    .section-title { font-family: 'Playfair Display', serif; font-size: clamp(1.9rem, 3.5vw, 2.8rem); font-weight: 700; color: var(--cream); line-height: 1.15; margin-bottom: 1.4rem; }
+    .section-title em { font-style: italic; color: var(--gold); }
+    .section-body { font-size: 0.97rem; color: var(--ash); max-width: 640px; line-height: 1.85; margin-bottom: 1rem; }
+    .brick-top { position: relative; }
+    .brick-top::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 6px; background: repeating-linear-gradient(90deg, var(--brick) 0, var(--brick) 88px, var(--rust) 88px, var(--rust) 90px, var(--brick) 90px, var(--brick) 94px, transparent 94px, transparent 96px); }
+
+    /* ─── ABOUT ────────────────────────────────── */
+    #about { background: var(--iron); }
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
+    .img-frame { position: relative; }
+    .img-frame::before { content: ''; position: absolute; top: -14px; left: -14px; right: 14px; bottom: 14px; border: 2px solid var(--rust); z-index: 0; }
+    .img-frame img { width: 100%; height: 440px; object-fit: cover; position: relative; z-index: 1; filter: sepia(25%) contrast(1.08) brightness(0.88); display: block; }
+    .about-text p { color: var(--ash); margin-bottom: 1.1rem; font-size: 0.96rem; }
+    .about-text p strong { color: var(--cream); }
+    .stat-row { display: flex; gap: 2.5rem; margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid rgba(168,56,32,0.3); flex-wrap: wrap; }
+    .stat-num { font-family: 'Playfair Display', serif; font-size: 2.8rem; font-weight: 900; color: var(--gold); line-height: 1; }
+    .stat-lbl { font-family: 'Oswald', sans-serif; font-size: 0.68rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ash); margin-top: 0.3rem; }
+
+    /* ─── SERVICES ─────────────────────────────── */
+    #services { background: var(--soot); }
+    .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; margin-top: 3.5rem; background: var(--rust); }
+    .svc-card { background: var(--iron); padding: 2.4rem 1.8rem; position: relative; overflow: hidden; transition: background 0.25s; }
+    .svc-card::after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 3px; background: var(--gold); transition: width 0.35s; }
+    .svc-card:hover { background: var(--ironlight); }
+    .svc-card:hover::after { width: 100%; }
+    .svc-icon { font-size: 1.9rem; margin-bottom: 1rem; display: block; }
+    .svc-name { font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 700; color: var(--cream); margin-bottom: 0.6rem; }
+    .svc-desc { font-size: 0.87rem; color: var(--ash); line-height: 1.75; }
+
+    /* ─── BEFORE/AFTER SPOTLIGHT ───────────────── */
+    #spotlight { background: var(--iron); }
+    .spotlight-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; margin-top: 3rem; background: var(--rust); }
+    .spot-card { background: var(--ironlight); position: relative; overflow: hidden; cursor: pointer; }
+    .spot-card img { width: 100%; height: 280px; object-fit: cover; display: block; filter: sepia(20%) contrast(1.05) brightness(0.85); transition: filter 0.4s, transform 0.5s; }
+    .spot-card:hover img { filter: sepia(5%) contrast(1.1) brightness(1); transform: scale(1.04); }
+    .spot-tag {
+      position: absolute; top: 1rem; left: 1rem;
+      background: var(--rust); color: var(--cream);
+      font-family: 'Oswald', sans-serif; font-size: 0.65rem; letter-spacing: 0.2em;
+      text-transform: uppercase; padding: 0.3rem 0.7rem;
+    }
+    .spot-info { padding: 1.2rem 1.4rem; }
+    .spot-title { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; color: var(--cream); margin-bottom: 0.3rem; }
+    .spot-desc { font-size: 0.83rem; color: var(--ash); line-height: 1.65; }
+
+    /* ─── GALLERY ──────────────────────────────── */
+    #gallery { background: var(--soot); }
+    .gallery-swap-note { background: rgba(168,56,32,0.15); border-left: 3px solid var(--rust); padding: 0.75rem 1.1rem; font-size: 0.82rem; color: var(--ash); font-style: italic; margin-bottom: 2.5rem; }
+    .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: 260px 260px; gap: 6px; }
+    .g-tall { grid-row: span 2; }
+    .g-item { overflow: hidden; position: relative; background: var(--ironlight); }
+    .g-item img { width: 100%; height: 100%; object-fit: cover; filter: sepia(30%) contrast(1.05) brightness(0.85); transition: transform 0.5s ease, filter 0.4s ease; display: block; }
+    .g-item:hover img { transform: scale(1.06); filter: sepia(10%) contrast(1.1) brightness(1); }
+    .g-label { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(14,10,7,0.88)); padding: 1.8rem 1rem 0.9rem; font-family: 'Oswald', sans-serif; font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ash); opacity: 0; transition: opacity 0.3s; }
+    .g-item:hover .g-label { opacity: 1; }
+
+    /* ─── TESTIMONIALS CAROUSEL ────────────────── */
+    #reviews { background: var(--iron); }
+    .reviews-header { display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 3rem; flex-wrap: wrap; gap: 1.5rem; }
+    .agg-score { font-family: 'Playfair Display', serif; font-size: 4rem; font-weight: 900; color: var(--gold); line-height: 1; }
+    .review-aggregate { display: flex; align-items: center; gap: 1.2rem; }
+    .agg-stars { color: var(--gold); font-size: 1.2rem; }
+    .agg-count { font-family: 'Oswald', sans-serif; font-size: 0.75rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ash); margin-top: 0.2rem; }
+    .google-badge { display: flex; align-items: center; gap: 0.5rem; font-family: 'Oswald', sans-serif; font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ash); margin-top: 0.4rem; }
+    .google-badge svg { width: 18px; height: 18px; }
+
+    /* Carousel */
+    .carousel-wrap { position: relative; overflow: hidden; }
+    .carousel-track { display: flex; gap: 2px; transition: transform 0.5s ease; }
+    .review-card { background: var(--ironlight); padding: 2rem 1.8rem; min-width: calc(50% - 1px); flex-shrink: 0; }
+    .review-card.featured { min-width: 100%; background: var(--ironlight); border-left: 4px solid var(--gold); }
+    .reviewer-name { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; color: var(--cream); margin-bottom: 0.2rem; }
+    .reviewer-meta { font-family: 'Oswald', sans-serif; font-size: 0.68rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--rust); margin-bottom: 0.8rem; }
+    .review-stars { color: var(--gold); font-size: 0.95rem; margin-bottom: 0.8rem; }
+    .review-text { font-size: 0.92rem; color: var(--ash); line-height: 1.8; font-style: italic; }
+    .carousel-controls { display: flex; align-items: center; gap: 1rem; margin-top: 1.5rem; }
+    .carousel-btn { background: var(--ironlight); border: 1px solid var(--rust); color: var(--ash); width: 40px; height: 40px; cursor: pointer; font-size: 1rem; display: flex; align-items: center; justify-content: center; transition: background 0.2s, color 0.2s; }
+    .carousel-btn:hover { background: var(--rust); color: var(--cream); }
+    .carousel-dots { display: flex; gap: 0.5rem; }
+    .cdot { width: 8px; height: 8px; background: var(--ironlight); border: 1px solid var(--rust); cursor: pointer; transition: background 0.2s; }
+    .cdot.active { background: var(--gold); border-color: var(--gold); }
+    .review-cta { margin-top: 2rem; }
+    .review-cta a { font-family: 'Oswald', sans-serif; font-size: 0.78rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ash); text-decoration: none; border-bottom: 1px solid var(--rust); padding-bottom: 0.2rem; transition: color 0.2s, border-color 0.2s; }
+    .review-cta a:hover { color: var(--gold); border-color: var(--gold); }
+
+    /* ─── SERVICE AREA MAP ─────────────────────── */
+    #service-area { background: var(--soot); }
+    .area-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 4rem; align-items: center; }
+    .area-map { width: 100%; height: 420px; border: 2px solid var(--rust); filter: grayscale(50%) sepia(15%); display: block; }
+    .area-list { display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; margin-top: 1.5rem; }
+    .area-item { font-family: 'Oswald', sans-serif; font-size: 0.8rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ash); display: flex; align-items: center; gap: 0.5rem; }
+    .area-item::before { content: '◆'; font-size: 0.4rem; color: var(--rust); }
+
+    /* ─── FAQ ──────────────────────────────────── */
+    #faq { background: var(--iron); }
+    .faq-list { margin-top: 2.5rem; }
+    .faq-item { border-bottom: 1px solid rgba(168,56,32,0.3); }
+    .faq-q {
+      width: 100%; background: none; border: none; cursor: pointer;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1.4rem 0;
+      font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 700;
+      color: var(--cream); text-align: left;
+      transition: color 0.2s;
+    }
+    .faq-q:hover { color: var(--gold); }
+    .faq-q .faq-icon { font-size: 1.2rem; color: var(--rust); transition: transform 0.3s; flex-shrink: 0; margin-left: 1rem; }
+    .faq-q.open .faq-icon { transform: rotate(45deg); color: var(--gold); }
+    .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.4s ease, padding 0.3s; }
+    .faq-a.open { max-height: 400px; padding-bottom: 1.4rem; }
+    .faq-a p { font-size: 0.93rem; color: var(--ash); line-height: 1.85; }
+
+    /* ─── CONTACT ──────────────────────────────── */
+    #contact { background: var(--soot); }
+    .contact-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 5rem; align-items: start; }
+    .contact-block { margin-bottom: 1.8rem; }
+    .contact-lbl { font-family: 'Oswald', sans-serif; font-size: 0.66rem; letter-spacing: 0.26em; text-transform: uppercase; color: var(--rust); margin-bottom: 0.35rem; }
+    .contact-val { font-size: 1rem; color: var(--cream); }
+    .contact-val a { color: var(--cream); text-decoration: none; transition: color 0.2s; }
+    .contact-val a:hover { color: var(--gold); }
+    .hours-table { width: 100%; border-collapse: collapse; margin-top: 0.4rem; }
+    .hours-table td { font-size: 0.9rem; color: var(--ash); padding: 0.22rem 0; }
+    .hours-table td:last-child { text-align: right; color: var(--cream); }
+
+    /* Contact Form */
+    .contact-form { margin-top: 2rem; }
+    .form-title { font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: 700; color: var(--cream); margin-bottom: 1.2rem; }
+    .form-group { margin-bottom: 1rem; }
+    .form-group label { display: block; font-family: 'Oswald', sans-serif; font-size: 0.66rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--rust); margin-bottom: 0.3rem; }
+    .form-group input, .form-group textarea, .form-group select {
+      width: 100%; background: var(--ironlight); border: 1px solid rgba(168,56,32,0.4);
+      color: var(--cream); font-family: 'Libre Baskerville', serif; font-size: 0.9rem;
+      padding: 0.75rem 1rem; outline: none;
+      transition: border-color 0.2s;
+    }
+    .form-group input:focus, .form-group textarea:focus, .form-group select:focus { border-color: var(--gold); }
+    .form-group textarea { resize: vertical; min-height: 110px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .btn-submit { width: 100%; background: var(--rust); color: var(--cream); border: none; cursor: pointer; font-family: 'Oswald', sans-serif; font-size: 0.82rem; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 600; padding: 1rem; transition: background 0.2s; margin-top: 0.5rem; }
+    .btn-submit:hover { background: var(--ember); }
+    .form-note { font-size: 0.78rem; color: var(--ash); margin-top: 0.6rem; font-style: italic; }
+
+    /* Map side */
+    .contact-map { width: 100%; height: 280px; border: 2px solid var(--rust); filter: grayscale(60%) sepia(20%); display: block; margin-bottom: 1rem; }
+    .contact-directions { display: inline-flex; align-items: center; gap: 0.5rem; font-family: 'Oswald', sans-serif; font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ash); text-decoration: none; transition: color 0.2s; }
+    .contact-directions:hover { color: var(--gold); }
+
+    /* ─── FOOTER ───────────────────────────────── */
+    footer { background: #0a0806; border-top: 2px solid var(--rust); padding: 3rem; }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; max-width: 1100px; margin: 0 auto; }
+    .footer-brand-name { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; color: var(--gold); margin-bottom: 0.4rem; }
+    .footer-brand-sub { font-family: 'Oswald', sans-serif; font-size: 0.68rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ash); margin-bottom: 1rem; }
+    .footer-brand-desc { font-size: 0.85rem; color: var(--ash); line-height: 1.75; }
+    .footer-col-title { font-family: 'Oswald', sans-serif; font-size: 0.72rem; letter-spacing: 0.24em; text-transform: uppercase; color: var(--rust); margin-bottom: 1rem; }
+    .footer-links { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
+    .footer-links a { font-size: 0.88rem; color: var(--ash); text-decoration: none; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--gold); }
+    .footer-contact-item { font-size: 0.88rem; color: var(--ash); margin-bottom: 0.5rem; }
+    .footer-contact-item a { color: var(--ash); text-decoration: none; transition: color 0.2s; }
+    .footer-contact-item a:hover { color: var(--gold); }
+    .footer-bottom { max-width: 1100px; margin: 2rem auto 0; padding-top: 1.5rem; border-top: 1px solid rgba(168,56,32,0.3); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+    .footer-copy { font-family: 'Oswald', sans-serif; font-size: 0.68rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ash); }
+
+    /* ─── RESPONSIVE ───────────────────────────── */
+    @media (max-width: 900px) {
+      nav { padding: 0 1.5rem; }
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+      .hero-content { padding: 100px 2rem 60px; }
+      .section-inner { padding: 4rem 1.5rem; }
+      .about-grid, .contact-grid, .area-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .services-grid, .spotlight-grid { grid-template-columns: 1fr 1fr; }
+      .gallery-grid { grid-template-columns: 1fr 1fr; grid-template-rows: auto; }
+      .g-tall { grid-row: span 1; }
+      .review-card { min-width: 100%; }
+      .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
+      .trust-item { padding: 0.75rem 1rem; font-size: 0.68rem; }
+      .float-cta span { display: none; }
+      .float-cta { padding: 1rem; border-radius: 50%; }
+      .form-row { grid-template-columns: 1fr; }
+      .area-list { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 560px) {
+      .services-grid, .spotlight-grid { grid-template-columns: 1fr; }
+      .gallery-grid { grid-template-columns: 1fr; grid-template-rows: auto; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .hero-title { font-size: 2.4rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- EMERGENCY BAR -->
+<div class="emergency-bar">
+  🔥 Emergency welding &amp; repair services available — <a href="tel:9147372091">Call (914) 737-2091</a>
+</div>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <a class="nav-brand" href="#hero">
+    Highland Welding Service
+    <small>Peekskill, New York · Est. 1946</small>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="services/index.html">Services</a></li>
+    <li><a href="#spotlight">Projects</a></li>
+    <li><a href="blog/index.html">Resources</a></li><li><a href="#reviews">Reviews</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <a class="nav-cta" href="tel:9147372091">(914) 737-2091</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" class="mm-link">About</a>
+  <a href="services/index.html" class="mm-link">Services</a>
+  <a href="#spotlight" class="mm-link">Projects</a>
+  <a href="#reviews" class="mm-link">Reviews</a>
+  <a href="#faq" class="mm-link">FAQ</a>
+  <a href="contact.html" class="mm-link">Contact</a>
+  <a href="tel:9147372091" class="m-phone">(914) 737-2091</a>
+</div>
+
+<!-- FLOATING CTA -->
+<a class="float-cta" id="floatCta" href="tel:9147372091">
+  <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+  <span>Call Now</span>
+</a>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <div class="est-rule"><span>Established 1946</span></div>
+    <h1 class="hero-title">Built on <em>Iron.</em><br>Trusted for Generations.</h1>
+    <p class="hero-sub">Structural Steel &amp; Metal Fabrication — Peekskill, NY</p>
+    <p class="hero-desc">For nearly 80 years, Highland Welding Service has been Westchester's go-to shop for structural steel fabrication, custom metalwork, crane services, and welding repair — commercial and residential.</p>
+    <div class="hero-stars">
+      <span class="stars">★★★★★</span>
+      <span>5.0 Google Rating · 16 Reviews</span>
+    </div>
+    <div class="btn-group">
+      <a class="btn-primary" href="tel:9147372091">Call Us Today</a>
+      <a class="btn-ghost" href="services/index.html">Our Services</a>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-item reveal reveal-delay-1">🏗 Est. 1946</div>
+  <div class="trust-item reveal reveal-delay-2">⭐ 5.0 Google Rating</div>
+  <div class="trust-item reveal reveal-delay-3">🔧 Non-Union Shop</div>
+  <div class="trust-item reveal reveal-delay-4">🏘 Commercial &amp; Residential</div>
+  <div class="trust-item reveal reveal-delay-5">📍 Westchester &amp; Hudson Valley</div>
+</div>
+
+<!-- ABOUT -->
+<section id="about" class="brick-top">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="img-frame reveal-left">
+        <!-- SWAP: Replace with real brick shop exterior or interior photo -->
+        <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=900&q=80" alt="Highland Welding Service shop, 684 Highland Ave, Peekskill NY"/>
+      </div>
+      <div class="about-text reveal-right">
+        <p class="section-eyebrow">Our Story</p>
+        <h2 class="section-title">Nearly 80 Years of <em>Craftsmanship</em></h2>
+        <p>Highland Welding Service, Inc. has been operating from our brick shop at <strong>684 Highland Avenue in Peekskill</strong> since 1946. What started as a local welding operation has grown into one of the Hudson Valley's most trusted metal fabrication shops.</p>
+        <p>We handle everything from structural steel framing and crane work to one-off custom fabrications and everyday metal repairs. No job too small, no project too complex — our team brings decades of hands-on experience to every weld.</p>
+        <p>Owner <strong>Dominick Giusti</strong> and his team take pride in doing things the right way, with the kind of personal service that's rare today. When you call Highland, a real person picks up — and we stand behind every job we do.</p>
+        <div class="stat-row">
+          <div><div class="stat-num">1946</div><div class="stat-lbl">Year Founded</div></div>
+          <div><div class="stat-num">5.0</div><div class="stat-lbl">Google Rating</div></div>
+          <div><div class="stat-num">16</div><div class="stat-lbl">5-Star Reviews</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="section-inner">
+    <p class="section-eyebrow reveal">What We Do</p>
+    <h2 class="section-title reveal">Our Services</h2>
+    <p class="section-body reveal">From large-scale structural steel to precision custom fabrication — for contractors, businesses, and homeowners alike.</p>
+    <div class="services-grid">
+      <div class="svc-card reveal reveal-delay-1">
+        <span class="svc-icon">🏗</span>
+        <div class="svc-name">Structural Steel Fabrication</div>
+        <p class="svc-desc">Custom structural steel framing, columns, and beams for commercial and residential construction projects throughout Westchester and the Hudson Valley.</p>
+      </div>
+      <div class="svc-card reveal reveal-delay-2">
+        <span class="svc-icon">🔧</span>
+        <div class="svc-name">Metal Repair &amp; Welding</div>
+        <p class="svc-desc">On-site and in-shop welding repairs for all types of metal components — from industrial machinery and equipment to household metal items.</p>
+      </div>
+      <div class="svc-card reveal reveal-delay-3">
+        <span class="svc-icon">⚙️</span>
+        <div class="svc-name">Custom Metal Fabrication</div>
+        <p class="svc-desc">One-off and production custom fabrications built to your specs. If you can draw it, we can build it — decorative ironwork to industrial components.</p>
+      </div>
+      <div class="svc-card reveal reveal-delay-1">
+        <span class="svc-icon">🏚</span>
+        <div class="svc-name">Crane &amp; Rigging Services</div>
+        <p class="svc-desc">Bridge, gantry, jib, mobile, and tower cranes. Certified lifting and rigging for construction and industrial applications across the tri-state area.</p>
+      </div>
+      <div class="svc-card reveal reveal-delay-2">
+        <span class="svc-icon">🏠</span>
+        <div class="svc-name">Residential Metalwork</div>
+        <p class="svc-desc">Railings, gates, stair stringers, decorative ironwork, grate repairs, and more for homeowners across Westchester and Putnam counties.</p>
+      </div>
+      <div class="svc-card reveal reveal-delay-3">
+        <span class="svc-icon">🏢</span>
+        <div class="svc-name">Commercial &amp; Industrial</div>
+        <p class="svc-desc">Non-union shop handling projects up to $100,000. We work with general contractors, facility managers, and business owners throughout the region.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECT SPOTLIGHT -->
+<section id="spotlight" class="brick-top">
+  <div class="section-inner">
+    <p class="section-eyebrow reveal">Project Spotlight</p>
+    <h2 class="section-title reveal">Work From the Shop</h2>
+    <p class="section-body reveal">A sample of what we do every day — from structural builds to small repairs that make a big difference.</p>
+    <div class="spotlight-grid">
+      <div class="spot-card reveal reveal-delay-1">
+        <!-- SWAP: real project photo -->
+        <img src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=600&q=80" alt="Structural steel project"/>
+        <div class="spot-tag">Commercial</div>
+        <div class="spot-info">
+          <div class="spot-title">Structural Steel Framing</div>
+          <p class="spot-desc">Custom fabricated steel columns and beams for a commercial build in Westchester County. Fabricated in-shop, delivered on time.</p>
+        </div>
+      </div>
+      <div class="spot-card reveal reveal-delay-2">
+        <!-- SWAP: real project photo -->
+        <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&q=80" alt="Custom fabrication"/>
+        <div class="spot-tag">Custom Fab</div>
+        <div class="spot-info">
+          <div class="spot-title">Custom Metal Components</div>
+          <p class="spot-desc">Precision fabricated components for industrial equipment. Tight tolerances, quality materials, built to last.</p>
+        </div>
+      </div>
+      <div class="spot-card reveal reveal-delay-3">
+        <!-- SWAP: real project photo -->
+        <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=600&q=80" alt="Residential repair"/>
+        <div class="spot-tag">Residential</div>
+        <div class="spot-info">
+          <div class="spot-title">Residential Repair &amp; Ironwork</div>
+          <p class="spot-desc">From stove grates to custom railings — we treat every job, big or small, with the same care and craftsmanship.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="section-inner">
+    <p class="section-eyebrow reveal">The Shop</p>
+    <h2 class="section-title reveal">Gallery</h2>
+    <div class="gallery-swap-note">
+      📷 Replace placeholder images with real photos from Google Maps listing and Facebook page.
+    </div>
+    <div class="gallery-grid">
+      <div class="g-item g-tall reveal-left">
+        <img src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=700&q=80" alt="Shop interior"/>
+        <div class="g-label">The Shop — 684 Highland Ave</div>
+      </div>
+      <div class="g-item reveal reveal-delay-1">
+        <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=700&q=80" alt="Metal fabrication"/>
+        <div class="g-label">Custom Fabrication</div>
+      </div>
+      <div class="g-item reveal reveal-delay-2">
+        <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=700&q=80" alt="Structural steel"/>
+        <div class="g-label">Structural Steel</div>
+      </div>
+      <div class="g-item reveal reveal-delay-3">
+        <img src="https://images.unsplash.com/photo-1530046339160-ce3e530c7d2f?w=700&q=80" alt="Welding"/>
+        <div class="g-label">Precision Welding</div>
+      </div>
+      <div class="g-item reveal reveal-delay-4">
+        <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=700&q=80" alt="Metal repair"/>
+        <div class="g-label">Metal Repair</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS CAROUSEL -->
+<section id="reviews" class="brick-top">
+  <div class="section-inner">
+    <div class="reviews-header">
+      <div class="reveal">
+        <p class="section-eyebrow">What Customers Say</p>
+        <h2 class="section-title">5-Star Google Reviews</h2>
+      </div>
+      <div class="review-aggregate reveal">
+        <div class="agg-score">5.0</div>
+        <div>
+          <div class="agg-stars">★★★★★</div>
+          <div class="agg-count">16 Reviews on Google</div>
+          <div class="google-badge">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+              <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+              <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/>
+              <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+            </svg>
+            Verified Google Reviews
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-wrap reveal">
+      <div class="carousel-track" id="carouselTrack">
+        <div class="review-card featured">
+          <div class="reviewer-name">Deb Ora Liljegren</div>
+          <div class="reviewer-meta">Google Review · 2 years ago</div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Great work, solid people. My stove grates snapped in several places — replacements aren't available anymore, so my only hope was a repair. One place wouldn't even look at them, but Elizabeth told me I could stop by so Dominic could look and see what they could do. Two days later I had my grates back, repaired, and for less than take-out dinner. Bonus: everyone there is nice and have great local recommendations."</p>
+        </div>
+        <div class="review-card">
+          <div class="reviewer-name">John Jaeger</div>
+          <div class="reviewer-meta">Google Review · 1 year ago</div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Highland Welding — nothing but great service, period. They care about you the customer and that really is rare today. They are in my book the best — great company."</p>
+        </div>
+        <div class="review-card">
+          <div class="reviewer-name">Carlos Marrero</div>
+          <div class="reviewer-meta">Google Review · 1 year ago</div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"I brought my boss's commercial can opener to get welded because a piece was broken and they did an excellent job. Very highly recommended for any repairs — great job guys, much appreciated."</p>
+        </div>
+        <div class="review-card">
+          <div class="reviewer-name">Marlon Moreno</div>
+          <div class="reviewer-meta">Google Review · 2 months ago</div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"These guys are amazing! Highly recommend — fast turnaround. I will be back if ever needed. Friendly staff!"</p>
+        </div>
+        <div class="review-card">
+          <div class="reviewer-name">Richard England</div>
+          <div class="reviewer-meta">Google Review · 7 months ago</div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Five stars — delivered exactly what was needed, no hassle, no runaround. Exactly the kind of trusted local shop you want in your corner for metalwork."</p>
+        </div>
+      </div>
+      <div class="carousel-controls">
+        <button class="carousel-btn" id="carouselPrev">&#8592;</button>
+        <button class="carousel-btn" id="carouselNext">&#8594;</button>
+        <div class="carousel-dots" id="carouselDots"></div>
+      </div>
+    </div>
+    <div class="review-cta reveal">
+      <a href="https://www.google.com/maps/place/Highland+Welding+Services+Inc/@41.300666,-73.9231787,17z" target="_blank" rel="noopener">View All 16 Reviews on Google →</a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREA -->
+<section id="service-area">
+  <div class="section-inner">
+    <div class="area-grid">
+      <div class="reveal-left">
+        <p class="section-eyebrow">Where We Work</p>
+        <h2 class="section-title">Service Area</h2>
+        <p class="section-body">Based in Peekskill, we serve contractors, businesses, and homeowners across the Hudson Valley, Westchester, and beyond.</p>
+        <div class="area-list">
+          <div class="area-item">Peekskill</div>
+          <div class="area-item">Westchester County</div>
+          <div class="area-item">Putnam County</div>
+          <div class="area-item">Hudson Valley</div>
+          <div class="area-item">New York City</div>
+          <div class="area-item">Long Island</div>
+          <div class="area-item">Rockland County</div>
+          <div class="area-item">Dutchess County</div>
+        </div>
+      </div>
+      <div class="reveal-right">
+        <iframe
+          class="area-map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96699!2d-73.9231787!3d41.300666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2c9268dada50f%3A0xc7e10760d8d1946f!2sHighland%20Welding%20Services%20Inc!5e0!3m2!1sen!2sus!4v1"
+          allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Highland Welding Service area map"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="brick-top">
+  <div class="section-inner">
+    <p class="section-eyebrow reveal">Common Questions</p>
+    <h2 class="section-title reveal">Frequently Asked Questions</h2>
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <button class="faq-q"><span>What types of jobs do you handle?</span><span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>We handle a wide range of metalwork — structural steel fabrication, custom metal fabrication, welding repairs (both in-shop and on-site), crane and rigging services, residential ironwork like railings and gates, and commercial and industrial projects. If it involves metal, call us and we'll let you know if we can help.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q"><span>Do you work on small residential jobs?</span><span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>Absolutely. We take pride in treating every job with the same care, whether it's a broken stove grate or a full commercial steel build. Many of our best reviews come from homeowners with small but important repairs that other shops wouldn't even look at.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q"><span>Are you union or non-union?</span><span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>We are a non-union shop, which gives us flexibility to work on a wider range of projects and keep costs competitive. We handle projects up to $100,000.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q"><span>What are your hours?</span><span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>We're open Monday through Friday, 7:00 AM to 3:30 PM. We are closed on weekends. For urgent situations outside business hours, call us at (914) 737-2091 and leave a message — we'll get back to you as soon as possible.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q"><span>How far do you travel for on-site work?</span><span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>We serve Westchester, Putnam, Rockland, and Dutchess counties, as well as New York City and Long Island. Have a project outside that range? Give us a call and we'll discuss it.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q"><span>How do I get a quote?</span><span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>The best way is to call us at (914) 737-2091 or stop by the shop at 684 Highland Avenue, Peekskill. For larger projects, you can also use the contact form on this page and we'll follow up promptly.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q"><span>How long has Highland Welding been in business?</span><span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>Highland Welding Service, Inc. was founded in 1946 and has been operating continuously from our brick shop on Highland Avenue in Peekskill ever since — nearly 80 years of serving the Hudson Valley community.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-inner">
+    <p class="section-eyebrow reveal">Get In Touch</p>
+    <h2 class="section-title reveal">Visit the Shop or Send Us a Message</h2>
+    <div class="contact-grid">
+      <div class="reveal-left">
+        <div class="contact-block">
+          <div class="contact-lbl">Phone</div>
+          <div class="contact-val"><a href="tel:9147372091">(914) 737-2091</a></div>
+        </div>
+        <div class="contact-block">
+          <div class="contact-lbl">Fax</div>
+          <div class="contact-val">(914) 737-6727</div>
+        </div>
+        <div class="contact-block">
+          <div class="contact-lbl">Email</div>
+          <div class="contact-val"><a href="mailto:highlandwelding@aol.com">highlandwelding@aol.com</a></div>
+        </div>
+        <div class="contact-block">
+          <div class="contact-lbl">Address</div>
+          <div class="contact-val">684 Highland Avenue<br>Peekskill, NY 10566</div>
+        </div>
+        <div class="contact-block">
+          <div class="contact-lbl">Hours</div>
+          <table class="hours-table">
+            <tr><td>Monday – Friday</td><td>7:00 AM – 3:30 PM</td></tr>
+            <tr><td>Saturday</td><td>Closed</td></tr>
+            <tr><td>Sunday</td><td>Closed</td></tr>
+          </table>
+        </div>
+
+        <!-- CONTACT FORM -->
+        <div class="contact-form">
+          <div class="form-title">Send Us a Message</div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">Your Name</label>
+              <input type="text" id="fname" placeholder="John Smith"/>
+            </div>
+            <div class="form-group">
+              <label for="fphone">Phone Number</label>
+              <input type="tel" id="fphone" placeholder="(914) 555-0000"/>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="fservice">Service Needed</label>
+            <select id="fservice">
+              <option value="">Select a service...</option>
+              <option>Structural Steel Fabrication</option>
+              <option>Metal Repair &amp; Welding</option>
+              <option>Custom Metal Fabrication</option>
+              <option>Crane &amp; Rigging Services</option>
+              <option>Residential Metalwork</option>
+              <option>Commercial / Industrial</option>
+              <option>Other / Not Sure</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="fmsg">Tell Us About Your Project</label>
+            <textarea id="fmsg" placeholder="Describe what you need — we'll follow up by phone or email..."></textarea>
+          </div>
+          <button class="btn-submit" onclick="handleFormSubmit(event)">Send Message</button>
+          <p class="form-note">* We typically respond within one business day. For urgent needs, please call directly.</p>
+        </div>
+      </div>
+
+      <div class="reveal-right">
+        <iframe
+          class="contact-map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3003.2!2d-73.9231787!3d41.300666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2c9268dada50f%3A0xc7e10760d8d1946f!2sHighland%20Welding%20Services%20Inc!5e0!3m2!1sen!2sus!4v1"
+          allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Highland Welding Service location"
+        ></iframe>
+        <a class="contact-directions" href="https://www.google.com/maps/dir/?api=1&destination=684+Highland+Ave+Peekskill+NY+10566" target="_blank" rel="noopener">
+          ↗ Get Directions
+        </a>
+        <div style="margin-top:2rem; padding-top:2rem; border-top:1px solid rgba(168,56,32,0.3);">
+          <div class="contact-lbl">Service Area</div>
+          <div class="contact-val" style="font-size:0.9rem;color:var(--ash);margin-top:0.3rem;">Westchester · Putnam · Rockland · Dutchess · Hudson Valley · NYC · Long Island</div>
+        </div>
+        <!-- Emergency callout repeated on contact -->
+        <div style="margin-top:2rem; background:rgba(200,38,10,0.12); border-left:3px solid var(--emergency); padding:1rem 1.2rem;">
+          <div style="font-family:'Oswald',sans-serif;font-size:0.7rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--emergency);margin-bottom:0.3rem;">🔥 Emergency Services</div>
+          <div style="font-size:0.9rem;color:var(--ash);">For urgent welding and repair needs, call us directly at <a href="tel:9147372091" style="color:var(--cream);text-decoration:none;">(914) 737-2091</a>.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand-name">Highland Welding Service, Inc.</div>
+      <div class="footer-brand-sub">684 Highland Ave · Peekskill, NY 10566 · Est. 1946</div>
+      <p class="footer-brand-desc">Westchester's trusted metal fabrication and welding shop since 1946. Structural steel, custom fabrication, crane services, and repair — commercial and residential.</p>
+    </div>
+    <div>
+      <div class="footer-col-title">Navigation</div>
+      <ul class="footer-links">
+        <li><a href="#about">About Us</a></li>
+        <li><a href="services/index.html">Services</a></li>
+        <li><a href="#spotlight">Projects</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="blog/index.html">Resources</a></li><li><a href="#reviews">Reviews</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Services</div>
+      <ul class="footer-links">
+        <li><a href="services/index.html">Structural Steel</a></li>
+        <li><a href="services/index.html">Metal Repair</a></li>
+        <li><a href="services/index.html">Custom Fabrication</a></li>
+        <li><a href="services/index.html">Crane &amp; Rigging</a></li>
+        <li><a href="services/index.html">Residential</a></li>
+        <li><a href="services/index.html">Commercial</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Contact</div>
+      <div class="footer-contact-item"><a href="tel:9147372091">(914) 737-2091</a></div>
+      <div class="footer-contact-item">Fax: (914) 737-6727</div>
+      <div class="footer-contact-item"><a href="mailto:highlandwelding@aol.com">highlandwelding@aol.com</a></div>
+      <div class="footer-contact-item" style="margin-top:0.8rem;">Mon–Fri: 7:00 AM – 3:30 PM</div>
+      <div class="footer-contact-item">Sat–Sun: Closed</div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2025 Highland Welding Service, Inc. All rights reserved.</div>
+    <div class="footer-copy">Built with pride in Peekskill, NY</div>
+  </div>
+</footer>
+
+<script>
+  // ── NAV SCROLL SHADOW
+  const nav = document.getElementById('mainNav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 40);
+  });
+
+  // ── FLOATING CTA
+  const floatCta = document.getElementById('floatCta');
+  window.addEventListener('scroll', () => {
+    floatCta.classList.toggle('visible', window.scrollY > 300);
+  });
+
+  // ── HAMBURGER MENU
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    mobileMenu.classList.toggle('open');
+    document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
+  });
+  document.querySelectorAll('.mm-link, .m-phone').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('open');
+      mobileMenu.classList.remove('open');
+      document.body.style.overflow = '';
+    });
+  });
+
+  // ── SCROLL REVEAL
+  const reveals = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+    });
+  }, { threshold: 0.12 });
+  reveals.forEach(el => observer.observe(el));
+
+  // ── FAQ ACCORDION
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const answer = btn.nextElementSibling;
+      const isOpen = btn.classList.contains('open');
+      document.querySelectorAll('.faq-q').forEach(b => { b.classList.remove('open'); b.nextElementSibling.classList.remove('open'); });
+      if (!isOpen) { btn.classList.add('open'); answer.classList.add('open'); }
+    });
+  });
+
+  // ── TESTIMONIAL CAROUSEL
+  const track = document.getElementById('carouselTrack');
+  const cards = track.querySelectorAll('.review-card');
+  const dotsContainer = document.getElementById('carouselDots');
+  let current = 0;
+
+  // Build dots
+  cards.forEach((_, i) => {
+    const dot = document.createElement('div');
+    dot.className = 'cdot' + (i === 0 ? ' active' : '');
+    dot.addEventListener('click', () => goTo(i));
+    dotsContainer.appendChild(dot);
+  });
+
+  function goTo(index) {
+    current = Math.max(0, Math.min(index, cards.length - 1));
+    const offset = Array.from(cards).slice(0, current).reduce((acc, c) => acc + c.offsetWidth + 2, 0);
+    track.style.transform = `translateX(-${offset}px)`;
+    document.querySelectorAll('.cdot').forEach((d, i) => d.classList.toggle('active', i === current));
+  }
+
+  document.getElementById('carouselPrev').addEventListener('click', () => goTo(current - 1));
+  document.getElementById('carouselNext').addEventListener('click', () => goTo(current + 1));
+
+  // Auto-advance carousel
+  setInterval(() => goTo(current + 1 < cards.length ? current + 1 : 0), 5500);
+
+  // ── CONTACT FORM
+  function handleFormSubmit(e) {
+    e.preventDefault();
+    const name = document.getElementById('fname').value.trim();
+    const phone = document.getElementById('fphone').value.trim();
+    const msg = document.getElementById('fmsg').value.trim();
+    if (!name || !phone) { alert('Please enter your name and phone number.'); return; }
+    // In production: replace with actual form handler or mailto link
+    const mailtoLink = `mailto:highlandwelding@aol.com?subject=Website Inquiry from ${encodeURIComponent(name)}&body=${encodeURIComponent('Name: ' + name + '\nPhone: ' + phone + '\nService: ' + (document.getElementById('fservice').value || 'Not specified') + '\n\nMessage:\n' + msg)}`;
+    window.location.href = mailtoLink;
+  }
+</script>
+
+</body>
+</html>
