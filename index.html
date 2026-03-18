@@ -192,13 +192,13 @@
     body::after { display: none; }
 
     /* ─── SIGN BAND (matches building signage) ── */
-    .sign-band { background: #1a1a1a; display: flex; align-items: center; justify-content: center; padding: 1rem 3rem; gap: 1.2rem; position: relative; z-index: 600; }
-    .sign-inner { display: flex; align-items: center; gap: 1.2rem; max-width: 1100px; width: 100%; justify-content: space-between; }
-    .sign-left { display: flex; align-items: center; gap: 1.2rem; text-decoration: none; }
+    .sign-band { background: #1a1a1a; display: flex; align-items: center; justify-content: center; padding: 1.2rem 3rem; position: relative; z-index: 600; }
+    .sign-inner { display: flex; align-items: center; justify-content: center; gap: 1.4rem; }
+    .sign-left { display: flex; align-items: center; gap: 1.4rem; text-decoration: none; }
     .sign-circle { width: 52px; height: 52px; border: 2px solid rgba(255,255,255,0.6); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: 900; color: #fff; flex-shrink: 0; }
     .sign-name { font-family: 'Oswald', sans-serif; font-size: 1.6rem; font-weight: 600; color: #fff; letter-spacing: 0.2em; text-transform: uppercase; line-height: 1; }
     .sign-sub { font-family: 'Oswald', sans-serif; font-size: 0.75rem; font-weight: 300; color: rgba(255,255,255,0.7); letter-spacing: 0.35em; text-transform: uppercase; text-align: center; margin-top: 0.15rem; }
-    .sign-phone { font-family: 'Oswald', sans-serif; font-size: 0.85rem; font-weight: 400; color: #fff; letter-spacing: 0.1em; text-decoration: none; border: 1px solid rgba(255,255,255,0.4); padding: 0.45rem 1.2rem; transition: background 0.2s; white-space: nowrap; }
+    .sign-phone { width: 52px; height: 52px; border: 2px solid rgba(255,255,255,0.6); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Oswald', sans-serif; font-size: 0.55rem; font-weight: 400; color: #fff; letter-spacing: 0.05em; text-decoration: none; transition: background 0.2s; white-space: nowrap; flex-shrink: 0; line-height: 1.1; text-align: center; }
     .sign-phone:hover { background: rgba(255,255,255,0.1); }
 
     /* ─── NAVIGATION ───────────────────────────── */
@@ -523,14 +523,12 @@
 <!-- SIGN BAND — matches building signage -->
 <div class="sign-band">
   <div class="sign-inner">
-    <a href="#hero" class="sign-left">
-      <div class="sign-circle">684</div>
-      <div class="sign-text">
-        <div class="sign-name">Highland Welding</div>
-        <div class="sign-sub">Service</div>
-      </div>
-    </a>
-    <a class="sign-phone" href="tel:9147372091">(914) 737-2091</a>
+    <div class="sign-circle">684</div>
+    <div class="sign-text">
+      <div class="sign-name">Highland Welding</div>
+      <div class="sign-sub">Service</div>
+    </div>
+    <a class="sign-phone" href="tel:9147372091">737<br>2091</a>
   </div>
 </div>
 
