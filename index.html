@@ -191,17 +191,15 @@
     }
     body::after { display: none; }
 
-    /* ─── EMERGENCY BANNER ─────────────────────── */
-    .emergency-bar {
-      background: #1a1a1a;
-      text-align: center;
-      padding: 0.55rem 1rem;
-      font-family: 'Oswald', sans-serif;
-      font-size: 0.78rem; letter-spacing: 0.18em;
-      text-transform: uppercase; color: #fff;
-      position: relative; z-index: 600;
-    }
-    .emergency-bar a { color: #fff; text-decoration: underline; font-weight: 600; }
+    /* ─── SIGN BAND (matches building signage) ── */
+    .sign-band { background: #1a1a1a; display: flex; align-items: center; justify-content: center; padding: 1rem 3rem; gap: 1.2rem; position: relative; z-index: 600; }
+    .sign-inner { display: flex; align-items: center; gap: 1.2rem; max-width: 1100px; width: 100%; justify-content: space-between; }
+    .sign-left { display: flex; align-items: center; gap: 1.2rem; text-decoration: none; }
+    .sign-circle { width: 52px; height: 52px; border: 2px solid rgba(255,255,255,0.6); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: 900; color: #fff; flex-shrink: 0; }
+    .sign-name { font-family: 'Oswald', sans-serif; font-size: 1.6rem; font-weight: 600; color: #fff; letter-spacing: 0.2em; text-transform: uppercase; line-height: 1; }
+    .sign-sub { font-family: 'Oswald', sans-serif; font-size: 0.75rem; font-weight: 300; color: rgba(255,255,255,0.7); letter-spacing: 0.35em; text-transform: uppercase; text-align: center; margin-top: 0.15rem; }
+    .sign-phone { font-family: 'Oswald', sans-serif; font-size: 0.85rem; font-weight: 400; color: #fff; letter-spacing: 0.1em; text-decoration: none; border: 1px solid rgba(255,255,255,0.4); padding: 0.45rem 1.2rem; transition: background 0.2s; white-space: nowrap; }
+    .sign-phone:hover { background: rgba(255,255,255,0.1); }
 
     /* ─── NAVIGATION ───────────────────────────── */
     nav {
@@ -272,23 +270,23 @@
     /* ─── HERO ─────────────────────────────────── */
     #hero { min-height: auto; position: relative; display: flex; align-items: center; overflow: hidden; background: #fff; }
     .hero-bg { display: none; }
-    .hero-content { position: relative; z-index: 10; padding: 80px 5rem 60px; max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; width: 100%; }
+    .hero-content { position: relative; z-index: 10; padding: 80px 5rem 60px; max-width: 800px; margin: 0 auto; width: 100%; text-align: center; }
     .hero-text { }
-    .est-rule { display: flex; align-items: center; gap: 0.9rem; margin-bottom: 1.6rem; animation: fadeUp 0.7s 0.1s ease both; }
+    .est-rule { display: flex; align-items: center; justify-content: center; gap: 0.9rem; margin-bottom: 1.6rem; animation: fadeUp 0.7s 0.1s ease both; }
     .est-rule::before, .est-rule::after { content: ''; flex: 0 0 44px; height: 1px; background: #1a1a1a; }
     .est-rule span { font-family: 'Oswald', sans-serif; font-size: 0.68rem; letter-spacing: 0.3em; text-transform: uppercase; color: #1a1a1a; white-space: nowrap; }
     .hero-title { font-family: 'Playfair Display', serif; font-size: clamp(2.4rem, 4.5vw, 3.8rem); font-weight: 900; line-height: 1.05; color: #1a1a1a; margin-bottom: 0.4rem; animation: fadeUp 0.7s 0.2s ease both; }
     .hero-title em { font-style: italic; color: #444; }
     .hero-sub { font-family: 'Oswald', sans-serif; font-size: 0.9rem; letter-spacing: 0.24em; text-transform: uppercase; color: #666; font-weight: 300; margin-bottom: 1.8rem; animation: fadeUp 0.7s 0.3s ease both; }
     .hero-desc { font-size: 1rem; color: #555; max-width: 500px; margin-bottom: 2rem; line-height: 1.85; animation: fadeUp 0.7s 0.4s ease both; }
-    .hero-stars { display: flex; align-items: center; gap: 0.7rem; margin-bottom: 2.2rem; animation: fadeUp 0.7s 0.5s ease both; }
+    .hero-stars { display: flex; align-items: center; justify-content: center; gap: 0.7rem; margin-bottom: 2.2rem; animation: fadeUp 0.7s 0.5s ease both; }
     .stars { color: #1a1a1a; font-size: 1.1rem; letter-spacing: 0.05em; }
     .hero-stars span { font-family: 'Oswald', sans-serif; font-size: 0.78rem; letter-spacing: 0.14em; color: #666; text-transform: uppercase; }
-    .hero-review-quote { font-family: 'Playfair Display', serif; font-size: 0.95rem; font-style: italic; color: #333; line-height: 1.6; padding: 1rem 0 1rem 1.2rem; border-left: 3px solid #1a1a1a; margin-bottom: 2rem; animation: fadeUp 0.7s 0.55s ease both; }
+    .hero-review-quote { font-family: 'Playfair Display', serif; font-size: 0.95rem; font-style: italic; color: #333; line-height: 1.6; padding: 1.2rem 2rem; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; margin-bottom: 2rem; animation: fadeUp 0.7s 0.55s ease both; }
     .hero-review-attr { display: block; font-family: 'Oswald', sans-serif; font-size: 0.65rem; font-style: normal; letter-spacing: 0.2em; text-transform: uppercase; color: #999; margin-top: 0.5rem; }
     .hero-photo { animation: fadeUp 0.7s 0.3s ease both; }
     .hero-photo img { width: 100%; height: auto; display: block; border: 1px solid #e0e0e0; }
-    .btn-group { display: flex; gap: 1rem; flex-wrap: wrap; animation: fadeUp 0.7s 0.6s ease both; }
+    .btn-group { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; animation: fadeUp 0.7s 0.6s ease both; }
     @keyframes fadeUp { from { opacity:0; transform:translateY(28px); } to { opacity:1; transform:translateY(0); } }
     .btn-primary { display: inline-block; background: #1a1a1a; color: #fff; font-family: 'Oswald', sans-serif; font-size: 0.8rem; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 600; padding: 0.9rem 2.2rem; text-decoration: none; transition: background 0.2s, transform 0.15s; border: none; cursor: pointer; }
     .btn-primary:hover { background: var(--ember); transform: translateY(-2px); }
@@ -480,7 +478,12 @@
       nav { padding: 0 1.5rem; }
       .nav-links { display: none; }
       .hamburger { display: flex; }
-      .hero-content { padding: 60px 2rem 40px; grid-template-columns: 1fr; gap: 2rem; }
+      .hero-content { padding: 50px 2rem 40px; }
+      .sign-band { padding: 0.8rem 1.5rem; }
+      .sign-name { font-size: 1.1rem; letter-spacing: 0.15em; }
+      .sign-sub { font-size: 0.6rem; }
+      .sign-circle { width: 40px; height: 40px; font-size: 1rem; }
+      .sign-phone { display: none; }
       .section-inner { padding: 4rem 1.5rem; }
       .about-grid, .contact-grid, .area-grid { grid-template-columns: 1fr; gap: 2.5rem; }
       .services-grid, .spotlight-grid { grid-template-columns: 1fr 1fr; }
@@ -575,9 +578,7 @@
         <a class="btn-ghost" href="services/index.html">Our Services</a>
       </div>
     </div>
-    <div class="hero-photo">
-      <img src="images/shop-exterior.jpg" alt="Highland Welding Service — 684 Highland Avenue, Peekskill NY since 1946"/>
-    </div>
+    <!-- Photo saved for history page -->
   </div>
 </section>
 
