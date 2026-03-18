@@ -306,11 +306,11 @@
 
     /* ─── SECTION SHELL ────────────────────────── */
     .section-inner { max-width: 1100px; margin: 0 auto; padding: 6rem 3rem; }
-    .section-eyebrow { font-family: 'Oswald', sans-serif; font-size: 0.68rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--rust); display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.7rem; }
-    .section-eyebrow::after { content: ''; display: block; width: 44px; height: 1px; background: var(--rust); }
-    .section-title { font-family: 'Playfair Display', serif; font-size: clamp(1.9rem, 3.5vw, 2.8rem); font-weight: 700; color: var(--cream); line-height: 1.15; margin-bottom: 1.4rem; }
-    .section-title em { font-style: italic; color: var(--gold); }
-    .section-body { font-size: 0.97rem; color: var(--ash); max-width: 640px; line-height: 1.85; margin-bottom: 1rem; }
+    .section-eyebrow { font-family: 'Oswald', sans-serif; font-size: 0.68rem; letter-spacing: 0.3em; text-transform: uppercase; color: #999; display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.7rem; }
+    .section-eyebrow::after { content: ''; display: block; width: 44px; height: 1px; background: #ccc; }
+    .section-title { font-family: 'Playfair Display', serif; font-size: clamp(1.9rem, 3.5vw, 2.8rem); font-weight: 700; color: #1a1a1a; line-height: 1.15; margin-bottom: 1.4rem; }
+    .section-title em { font-style: italic; color: #333; }
+    .section-body { font-size: 0.97rem; color: #444; max-width: 640px; line-height: 1.85; margin-bottom: 1rem; }
     .brick-top { position: relative; }
     .brick-top::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: #e0e0e0; }
 
@@ -322,11 +322,11 @@
     .img-frame { display: none; }
     .img-frame::before { display: none; }
     .img-frame img { display: none; }
-    .about-text p { color: var(--ash); margin-bottom: 1.1rem; font-size: 0.96rem; }
-    .about-text p strong { color: var(--cream); }
+    .about-text p { color: #444; margin-bottom: 1.1rem; font-size: 0.96rem; }
+    .about-text p strong { color: #111; }
     .stat-row { display: flex; gap: 2.5rem; margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid rgba(0,0,0,0.1); flex-wrap: wrap; }
-    .stat-num { font-family: 'Playfair Display', serif; font-size: 2.8rem; font-weight: 900; color: var(--gold); line-height: 1; }
-    .stat-lbl { font-family: 'Oswald', sans-serif; font-size: 0.68rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ash); margin-top: 0.3rem; }
+    .stat-num { font-family: 'Playfair Display', serif; font-size: 2.8rem; font-weight: 900; color: #1a1a1a; line-height: 1; }
+    .stat-lbl { font-family: 'Oswald', sans-serif; font-size: 0.68rem; letter-spacing: 0.2em; text-transform: uppercase; color: #999; margin-top: 0.3rem; }
 
     /* ─── SERVICES ─────────────────────────────── */
     #services { background: #fff; text-align: center; }
@@ -337,8 +337,8 @@
     .svc-card:hover { background: var(--ironlight); }
     .svc-card:hover::after { width: 100%; }
     .svc-icon { font-size: 1.9rem; margin-bottom: 1rem; display: block; }
-    .svc-name { font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 700; color: var(--cream); margin-bottom: 0.6rem; }
-    .svc-desc { font-size: 0.87rem; color: var(--ash); line-height: 1.75; }
+    .svc-name { font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 700; color: #1a1a1a; margin-bottom: 0.6rem; }
+    .svc-desc { font-size: 0.87rem; color: #555; line-height: 1.75; }
 
     /* ─── BEFORE/AFTER SPOTLIGHT ───────────────── */
     #spotlight { background: #f8f8f8; text-align: center; }
@@ -354,8 +354,8 @@
       text-transform: uppercase; padding: 0.3rem 0.7rem;
     }
     .spot-info { padding: 1.2rem 1.4rem; }
-    .spot-title { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; color: var(--cream); margin-bottom: 0.3rem; }
-    .spot-desc { font-size: 0.83rem; color: var(--ash); line-height: 1.65; }
+    .spot-title { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; color: #1a1a1a; margin-bottom: 0.3rem; }
+    .spot-desc { font-size: 0.83rem; color: #555; line-height: 1.65; }
 
     /* ─── GALLERY ──────────────────────────────── */
     #gallery { background: #fff; text-align: center; }
@@ -373,7 +373,7 @@
     #reviews { background: #f8f8f8; text-align: center; }
     #reviews .section-eyebrow { justify-content: center; }
     .reviews-header { display: flex; flex-direction: column; align-items: center; margin-bottom: 3rem; gap: 1rem; }
-    .agg-score { font-family: 'Playfair Display', serif; font-size: 4rem; font-weight: 900; color: var(--gold); line-height: 1; }
+    .agg-score { font-family: 'Playfair Display', serif; font-size: 4rem; font-weight: 900; color: #1a1a1a; line-height: 1; }
     .review-aggregate { display: flex; align-items: center; gap: 1.2rem; }
     .agg-stars { color: var(--gold); font-size: 1.2rem; }
     .agg-count { font-family: 'Oswald', sans-serif; font-size: 0.75rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ash); margin-top: 0.2rem; }
@@ -385,10 +385,10 @@
     .carousel-track { display: flex; gap: 2px; transition: transform 0.5s ease; }
     .review-card { background: var(--ironlight); padding: 2rem 1.8rem; min-width: calc(50% - 1px); flex-shrink: 0; }
     .review-card.featured { min-width: 100%; background: var(--ironlight); border-left: 4px solid #1a1a1a; }
-    .reviewer-name { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; color: var(--cream); margin-bottom: 0.2rem; }
-    .reviewer-meta { font-family: 'Oswald', sans-serif; font-size: 0.68rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--rust); margin-bottom: 0.8rem; }
-    .review-stars { color: var(--gold); font-size: 0.95rem; margin-bottom: 0.8rem; }
-    .review-text { font-size: 0.92rem; color: var(--ash); line-height: 1.8; font-style: italic; }
+    .reviewer-name { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; color: #1a1a1a; margin-bottom: 0.2rem; }
+    .reviewer-meta { font-family: 'Oswald', sans-serif; font-size: 0.68rem; letter-spacing: 0.15em; text-transform: uppercase; color: #999; margin-bottom: 0.8rem; }
+    .review-stars { color: #1a1a1a; font-size: 0.95rem; margin-bottom: 0.8rem; }
+    .review-text { font-size: 0.92rem; color: #444; line-height: 1.8; font-style: italic; }
     .carousel-controls { display: flex; align-items: center; gap: 1rem; margin-top: 1.5rem; }
     .carousel-btn { background: var(--ironlight); border: 1px solid var(--rust); color: var(--ash); width: 40px; height: 40px; cursor: pointer; font-size: 1rem; display: flex; align-items: center; justify-content: center; transition: background 0.2s, color 0.2s; }
     .carousel-btn:hover { background: #1a1a1a; color: #fff; }
@@ -425,12 +425,12 @@
       color: var(--cream); text-align: left;
       transition: color 0.2s;
     }
-    .faq-q:hover { color: var(--gold); }
+    .faq-q:hover { color: #555; }
     .faq-q .faq-icon { font-size: 1.2rem; color: var(--rust); transition: transform 0.3s; flex-shrink: 0; margin-left: 1rem; }
     .faq-q.open .faq-icon { transform: rotate(45deg); color: var(--gold); }
     .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.4s ease, padding 0.3s; }
     .faq-a.open { max-height: 400px; padding-bottom: 1.4rem; }
-    .faq-a p { font-size: 0.93rem; color: var(--ash); line-height: 1.85; }
+    .faq-a p { font-size: 0.93rem; color: #444; line-height: 1.85; }
 
     /* ─── CONTACT ──────────────────────────────── */
     #contact { background: var(--soot); }
