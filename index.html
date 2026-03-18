@@ -319,9 +319,9 @@
     .about-grid { max-width: 700px; margin: 0 auto; }
     #about .section-eyebrow { justify-content: center; }
     .stat-row { justify-content: center; }
-    .img-frame { display: none; }
+    .img-frame { position: relative; max-width: 500px; margin: 0 auto 2rem; }
     .img-frame::before { display: none; }
-    .img-frame img { display: none; }
+    .img-frame img { width: 100%; height: auto; object-fit: cover; display: block; border: 1px solid #e0e0e0; }
     .about-text p { color: #444; margin-bottom: 1.1rem; font-size: 0.96rem; }
     .about-text p strong { color: #111; }
     .stat-row { display: flex; gap: 2.5rem; margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid rgba(0,0,0,0.1); flex-wrap: wrap; }
