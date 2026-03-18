@@ -28,17 +28,26 @@ body::after { display: none; }
 /* EMERGENCY BAR */
 .emergency-bar { background: #1a1a1a; text-align: center; padding: 0.55rem 1rem; font-family: 'Oswald', sans-serif; font-size: 0.78rem; letter-spacing: 0.18em; text-transform: uppercase; color: #fff; position: relative; z-index: 600; }
 .emergency-bar a { color: #fff; text-decoration: underline; font-weight: 600; }
-/* NAV */
-nav { position: sticky; top: 0; left: 0; right: 0; z-index: 500; background: rgba(255,255,255,0.98); border-bottom: 2px solid #e0e0e0; display: flex; align-items: center; justify-content: space-between; padding: 0 3rem; height: 66px; transition: box-shadow 0.3s; }
+/* NAV — SIGN BAND (matches building signage) */
+.sign-band { background: #1a1a1a; display: flex; align-items: center; justify-content: center; padding: 1rem 3rem; gap: 1.2rem; position: relative; }
+.sign-inner { display: flex; align-items: center; gap: 1.2rem; max-width: 1100px; width: 100%; justify-content: space-between; }
+.sign-left { display: flex; align-items: center; gap: 1.2rem; text-decoration: none; }
+.sign-circle { width: 52px; height: 52px; border: 2px solid rgba(255,255,255,0.6); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: 900; color: #fff; flex-shrink: 0; }
+.sign-text { }
+.sign-name { font-family: 'Oswald', sans-serif; font-size: 1.6rem; font-weight: 600; color: #fff; letter-spacing: 0.2em; text-transform: uppercase; line-height: 1; }
+.sign-sub { font-family: 'Oswald', sans-serif; font-size: 0.75rem; font-weight: 300; color: rgba(255,255,255,0.7); letter-spacing: 0.35em; text-transform: uppercase; text-align: center; margin-top: 0.15rem; }
+.sign-phone { font-family: 'Oswald', sans-serif; font-size: 0.85rem; font-weight: 400; color: #fff; letter-spacing: 0.1em; text-decoration: none; border: 1px solid rgba(255,255,255,0.4); padding: 0.45rem 1.2rem; transition: background 0.2s; white-space: nowrap; }
+.sign-phone:hover { background: rgba(255,255,255,0.1); }
+/* NAV LINKS BAR */
+nav { position: sticky; top: 0; left: 0; right: 0; z-index: 500; background: rgba(255,255,255,0.98); border-bottom: 1px solid #e0e0e0; display: flex; align-items: center; justify-content: center; padding: 0 3rem; height: 46px; transition: box-shadow 0.3s; }
 nav.scrolled { box-shadow: 0 4px 24px rgba(0,0,0,0.08); }
-.nav-brand { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; color: #1a1a1a; text-decoration: none; letter-spacing: 0.03em; }
-.nav-brand small { display: block; font-family: 'Oswald', sans-serif; font-size: 0.58rem; letter-spacing: 0.22em; color: #999; font-weight: 300; text-transform: uppercase; }
+.nav-brand { display: none; }
+.nav-brand small { display: none; }
 .nav-links { display: flex; gap: 2.2rem; list-style: none; }
-.nav-links a { font-family: 'Oswald', sans-serif; font-size: 0.78rem; letter-spacing: 0.16em; text-transform: uppercase; color: #555; text-decoration: none; transition: color 0.2s; }
+.nav-links a { font-family: 'Oswald', sans-serif; font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: #555; text-decoration: none; transition: color 0.2s; }
 .nav-links a:hover, .nav-links a.active { color: #1a1a1a; }
-.nav-right { display: flex; align-items: center; gap: 1rem; }
-.nav-cta { font-family: 'Oswald', sans-serif; font-size: 0.8rem; letter-spacing: 0.1em; color: #fff; text-decoration: none; background: #1a1a1a; padding: 0.5rem 1.4rem; transition: background 0.2s; white-space: nowrap; }
-.nav-cta:hover { background: #333; }
+.nav-right { display: none; }
+.nav-cta { display: none; }
 .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; }
 .hamburger span { display: block; width: 24px; height: 2px; background: #1a1a1a; transition: all 0.3s; }
 .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
@@ -118,8 +127,15 @@ footer { background: #1a1a1a; border-top: 2px solid #e0e0e0; padding: 3rem; colo
 .footer-copy { font-family: 'Oswald', sans-serif; font-size: 0.68rem; letter-spacing: 0.15em; text-transform: uppercase; color: #999; }
 /* RESPONSIVE */
 @media (max-width: 900px) {
-  nav { padding: 0 1.5rem; }
+  .sign-band { padding: 0.8rem 1.5rem; }
+  .sign-name { font-size: 1.1rem; letter-spacing: 0.15em; }
+  .sign-sub { font-size: 0.6rem; }
+  .sign-circle { width: 40px; height: 40px; font-size: 1rem; }
+  .sign-phone { display: none; }
+  nav { padding: 0 1.5rem; justify-content: space-between; }
   .nav-links { display: none; }
+  .nav-right { display: flex; }
+  .nav-cta { display: none; }
   .hamburger { display: flex; }
   .section-inner { padding: 4rem 1.5rem; }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
